@@ -1,0 +1,729 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"conti",
+				"containmentSelector"
+			],
+			[
+				"dra",
+				"draggableSelector"
+			],
+			[
+				"gripper",
+				"gripperDraggable"
+			],
+			[
+				"data",
+				"dataString"
+			],
+			[
+				"gim",
+				"gimbalLeft"
+			],
+			[
+				"motor",
+				"motorSpeed"
+			],
+			[
+				"arduin",
+				"arduino_url"
+			],
+			[
+				"sche",
+				"scheduleView"
+			],
+			[
+				"end",
+				"endHour"
+			],
+			[
+				"disable",
+				"disableRevertButton"
+			],
+			[
+				"target",
+				"targetEqualsProgramTemperature"
+			],
+			[
+				"enab",
+				"enableRevertButton"
+			],
+			[
+				"disabl",
+				"disableRevertButton"
+			],
+			[
+				"dis",
+				"disableRevertButton"
+			],
+			[
+				"check",
+				"checkNewSwitch"
+			],
+			[
+				"closest",
+				"closestNightSwitchInt"
+			],
+			[
+				"clos",
+				"closestDaySwitchInt"
+			],
+			[
+				"close",
+				"closestNightSwitchInt"
+			],
+			[
+				"cl",
+				"closestNightSwitchInt"
+			],
+			[
+				"tim",
+				"timestamp"
+			],
+			[
+				"addSwi",
+				"addSwitchPicker"
+			],
+			[
+				"addW",
+				"addSwitchItem"
+			],
+			[
+				"add",
+				"addSwitchItem"
+			],
+			[
+				"swit",
+				"switches2"
+			],
+			[
+				"oldEn",
+				"oldEndMinute"
+			],
+			[
+				"endh",
+				"endHourStart"
+			],
+			[
+				"writeCurr",
+				"writeCurrentTime"
+			],
+			[
+				"ch",
+				"checked"
+			],
+			[
+				"write",
+				"writeCurrnetTime"
+			],
+			[
+				"writeCurrent",
+				"writeCurrentDay"
+			],
+			[
+				"Current",
+				"CurrentDay"
+			],
+			[
+				"dayTemper",
+				"dayTemperatureSlider"
+			],
+			[
+				"dayTemp",
+				"dayTemperatureSlider"
+			],
+			[
+				"disab",
+				"disableOnVacationMode"
+			],
+			[
+				"disa",
+				"disableOnVacationMode"
+			],
+			[
+				"week",
+				"week_program_state"
+			],
+			[
+				"nig",
+				"night_temperature"
+			],
+			[
+				"increase",
+				"increaseTemp"
+			],
+			[
+				"increas",
+				"increaseTempButton"
+			],
+			[
+				"incre",
+				"increaseTempButton"
+			],
+			[
+				"alg",
+				"text-align"
+			],
+			[
+				"list-st",
+				"list-style-type"
+			],
+			[
+				"speech",
+				"speechSynthesis"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"$",
+				"$ancestors"
+			],
+			[
+				"$in",
+				"$included_pages"
+			],
+			[
+				"$par",
+				"$parent_id"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"text",
+				"text-indent"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Readme.md",
+			"settings":
+			{
+				"buffer_size": 120,
+				"line_ending": "Unix",
+				"name": "# Web Technology -- First assignment"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"last_filter": "pack",
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 561.0
+	},
+	"console":
+	{
+		"height": 166.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/thijs/Downloads/mla/MLA Style.md",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q1 Engineering Design/control-center-rest/style.css",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q1 Engineering Design/control-center-rest/index.html",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q1 Engineering Design/control-center-rest/server.js",
+		"/Users/thijs/Downloads/Helvetica.iatemplate/Contents/Resources/style.css",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q1 Engineering Design/control-center-rest/package.json",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q1 Engineering Design/control-center/server.js",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q1 Engineering Design/control-center/package.json",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q1 Engineering Design/control-center/index.html",
+		"/Users/thijs/Desktop/2016-09-02 Backup beeldcultuur.twebber.nl/root/wp-config.php",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q1 Engineering Design/control-center/npm-debug.log",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q1 Engineering Design/control-center/index.js",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q1 Engineering Design/Arduino/DCMotControl.ino",
+		"/Users/thijs/Documents/Administratie/Afschriften Rabobank/Transactions 2014-05-01 up to and including 2015-08-10.csv",
+		"/Users/thijs/Desktop/test.html",
+		"/Users/thijs/Desktop/2016-07 Schrijfsels vakantie Andalusië.md",
+		"/Users/thijs/Documents/Executables/stereo_mixdown",
+		"/Users/thijs/Documents/Executables/demux",
+		"/Users/thijs/Dropbox/Schrijfsels/2016-07 Quotes, infima.md",
+		"/Users/thijs/Dropbox/Schrijfsels/2016-01 Nummer van de dag 2016.md",
+		"/Users/thijs/Dropbox/Schrijfsels/2015-04 Nummer van de dag.md",
+		"/Users/thijs/Documents/Persoonlijk/Evenementen/2016-07 Examenfeest 1 jaar geslaagd/Entreekaart/Verkochte kaartjes - Blad1.csv",
+		"/Users/thijs/Documents/Projecten/2016-06 HTI/app/www/js/my-app.js",
+		"/Users/thijs/Documents/Projecten/2016-06 HTI/app/www/js/api.js",
+		"/Users/thijs/Documents/Projecten/2016-06 HTI/app/www/css/my-app.css",
+		"/Users/thijs/Documents/Projecten/2016-06 HTI/app/www/help-schedule.html",
+		"/Users/thijs/Documents/Projecten/2016-06 HTI/app/www/js/thermostat.js",
+		"/Users/thijs/Documents/Projecten/2016-06 HTI/app/www/day.html",
+		"/Users/thijs/Documents/Projecten/2016-06 HTI/app/www/index.html",
+		"/Users/thijs/Documents/Projecten/2016-06 HTI/app/www/help-current.html",
+		"/Users/thijs/Documents/Projecten/2016-06 HTI/app/www/help.html",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q4 Human-Technology Interaction/HTI (shared)/A4 Final assignment/thermostat_html5/js/fetch.js",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q4 Human-Technology Interaction/Tutorials/thermostat html5/thermostat_html5/testing_ws.html",
+		"/Users/thijs/Documents/Projecten/2016-06 HTI/app/www/jade/services.jade",
+		"/Users/thijs/Documents/Projecten/2016-06 HTI/app/www/less/my-app.less",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q4 Human-Technology Interaction/HTI (shared)/A4 Final assignment/thermostat_html5/js/graph.js",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q4 Human-Technology Interaction/HTI (shared)/A4 Final assignment/thermostat_html5/js/week_overview.js",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q4 Human-Technology Interaction/Framework7-master/kitchen-sink-ios/js/kitchen-sink.js",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q4 Human-Technology Interaction/Framework7-master/kitchen-sink-ios/picker.html",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q4 Human-Technology Interaction/Tutorials/thermostat html5/thermostat_html5/js/week_overview.js",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q4 Human-Technology Interaction/Tutorials/thermostat html5/thermostat_html5/js/api.js",
+		"/Users/thijs/Documents/Projecten/2016-06 HTI/app/www/monday.html",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q4 Human-Technology Interaction/Javascript Nikki/app.js",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q4 Human-Technology Interaction/Javascript Nikki/index.js",
+		"/Users/thijs/Documents/Projecten/2016-06 HTI/app/www/saturday.html",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q4 Human-Technology Interaction/Framework7-master/kitchen-sink-ios/jade/about.jade",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q4 Human-Technology Interaction/Tutorials/thermostat html5/thermostat_html5/js/cTemp.js",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q4 Human-Technology Interaction/Tutorials/thermostat html5/thermostat_html5/thermostat.html",
+		"/Users/thijs/Documents/Projecten/2016-06 HTI/app/www/jade/index.jade",
+		"/Users/thijs/Documents/Projecten/2016-06 HTI/app/.gitignore",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q4 Human-Technology Interaction/Framework7-master/examples/tab-bar/index.html",
+		"/Users/thijs/Documents/Projecten/2016-06 HTI/.gitignore",
+		"/Users/thijs/Documents/Projecten/2016-06 HTI/README.md",
+		"/Users/thijs/Documents/Projecten/2016-06 HTI/app/config.xml",
+		"/Users/thijs/Documents/Projecten/2016-06 HTI/examples/tab-bar/index.html",
+		"/Users/thijs/Documents/Projecten/2016-06 HTI/examples/tab-bar/jade/about.jade",
+		"/Volumes/Confidential/Dagboek/2016-06-10 Wat een kutweek.md",
+		"/Users/thijs/Documents/Projecten/2016-06 HTI/HTI16 Thermostat/config.xml",
+		"/Users/thijs/Documents/Projecten/2016-06 HTI/HTI16 Thermostat/www/index.html",
+		"/Users/thijs/.Trash/index.html",
+		"/Users/thijs/Documents/Projecten/2016-06 HTI/HTI16 Thermostat/www/spec.html",
+		"/Users/thijs/Documents/Projecten/2016-06 HTI/hti16/HTI16 Thermostat/www/index.html",
+		"/Users/thijs/Documents/Projecten/2016-06 HTI/hti16/README.md",
+		"/Users/thijs/Dropbox/TU Eindhoven/Completed courses/Y1Q2 Social Psychology and Consumer Behaviour/Summary/Summary Social Psychology and Consumer Behaviour.md",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q4 Human-Technology Interaction/HTI (shared)/A4 Final assignment/Framework7-master/README.md",
+		"/Users/thijs/Documents/Persoonlijk/Evenementen/2016-07 Examenfeest 1 jaar geslaagd/Scanner site/htaccess.txt",
+		"/Users/thijs/Documents/Persoonlijk/Evenementen/2016-07 Examenfeest 1 jaar geslaagd/Scanner site/index.html",
+		"/Volumes/Media/The Final iMac Transfer/Localhost minus mediaserver/Projecten/2014002_Eftelingmuziek/root/.htaccess",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q2 Social Psychology and Consumer Behaviour/Summary/Summary Social Psychology and Consumer Behaviour.md",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q3 DBL Hypermedia/adaptive wordpress/themes/autismuni/adaptation/adaptation.amf",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q3 DBL Hypermedia/adaptive wordpress/themes/autismuni/adaptation/modelling.umf",
+		"/Users/thijs/Sites/projects/hypermedia/root/wp-content/themes/hypermedia/partials/header.php",
+		"/Users/thijs/Sites/projects/hypermedia/root/wp-content/themes/hypermedia/partials/guides.php",
+		"/Users/thijs/Sites/projects/hypermedia/root/wp-content/themes/hypermedia/js/main.js",
+		"/Users/thijs/Sites/projects/hypermedia/scss/partials/_home-topics.scss",
+		"/Users/thijs/Sites/projects/hypermedia/root/wp-content/themes/hypermedia/wibaf/modelling.umf",
+		"/Users/thijs/Sites/projects/hypermedia/scss/partials/_side-nav.scss",
+		"/Users/thijs/Sites/projects/hypermedia/root/wp-content/themes/hypermedia/partials/footer.php",
+		"/Users/thijs/Sites/projects/hypermedia/scss/partials/_guides.scss",
+		"/Users/thijs/Sites/projects/hypermedia/scss/partials/_content.scss",
+		"/Users/thijs/Sites/projects/hypermedia/scss/style.scss",
+		"/Users/thijs/Sites/projects/hypermedia/root/wp-content/themes/hypermedia/wibaf/adaptation.php",
+		"/Users/thijs/Sites/projects/hypermedia/gulpfile.js",
+		"/Users/thijs/Sites/projects/hypermedia/scss/_base.scss",
+		"/Users/thijs/Sites/projects/hypermedia/root/wp-content/themes/hypermedia/index.php",
+		"/Users/thijs/Sites/projects/hypermedia/root/wp-content/themes/hypermedia/functions.php",
+		"/Users/thijs/Sites/projects/hypermedia/root/wp-content/themes/hypermedia/partials/home-topics.php",
+		"/Users/thijs/Sites/projects/hypermedia/scss/partials/_next-page.scss",
+		"/Users/thijs/Sites/projects/hypermedia/root/wp-content/themes/hypermedia/references.php",
+		"/Users/thijs/Sites/projects/hypermedia/root/wp-content/themes/hypermedia/sitemap.php",
+		"/Users/thijs/Sites/projects/hypermedia/scss/partials/_footer.scss",
+		"/Users/thijs/Sites/projects/hypermedia/root/wp-content/themes/hypermedia/single.php",
+		"/Users/thijs/Sites/projects/hypermedia/scss/modules/_grid.scss",
+		"/Users/thijs/Sites/projects/hypermedia/scss/partials/_top-nav.scss",
+		"/Users/thijs/Sites/projects/hypermedia/scss/_layout.scss",
+		"/Users/thijs/Sites/projects/hypermedia/scss/partials/_header.scss",
+		"/Users/thijs/Desktop/top-nav old.scss",
+		"/Users/thijs/Sites/projects/hypermedia/scss/partials/_hero.scss",
+		"/Users/thijs/Sites/projects/hypermedia/scss/modules/_variables.scss",
+		"/Users/thijs/Sites/projects/hypermedia/scss/modules/_elements.scss",
+		"/Users/thijs/Downloads/elevator.js-master/demo/index.html",
+		"/Users/thijs/Sites/projects/hypermedia/root/wp-includes/theme-compat/footer.php",
+		"/Users/thijs/Sites/projects/hypermedia/scss/modules/_wordpress_core.scss",
+		"/Users/thijs/Sites/projects/hypermedia/Hypermedia.sublime-project",
+		"/Users/thijs/Sites/projects/hypermedia/root/wp-content/themes/hypermedia/not-developed_templates/single.php",
+		"/Users/thijs/Sites/projects/hypermedia/root/wp-content/themes/hypermedia/not-developed_templates/page.php",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q3 DBL Hypermedia/Back-up 2016-03-29/Root/wp-config.php",
+		"/Users/thijs/Sites/projects/hypermedia/root/wp-content/themes/hypermedia/not-developed_templates/loop.php",
+		"/Users/thijs/Sites/projects/hypermedia/root/wp-content/themes/hypermedia/not-developed_templates/template-demo.php",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q3 Modelling/Group project/accelThijs v3.txt",
+		"/Users/thijs/Sites/projects/hypermedia/scss/modules/_normalize-opentype.scss",
+		"/Users/thijs/Sites/projects/hypermedia/root/wp-content/themes/hypermedia/archive.php",
+		"/Users/thijs/Sites/projects/hypermedia/root/wp-content/themes/hypermedia/404.php",
+		"/Users/thijs/Sites/projects/hypermedia/root/wp-content/themes/hypermedia/page.php",
+		"/Users/thijs/Sites/projects/hypermedia/root/wp-includes/post-template.php",
+		"/Users/thijs/Sites/projects/hypermedia/scss/modules/_fonts.scss",
+		"/Users/thijs/Sites/projects/hypermedia/root/wp-content/themes/twentyfifteen/functions.php",
+		"/Users/thijs/Sites/projects/hypermedia/root/wp-content/themes/twentyfifteen/content-page.php",
+		"/Users/thijs/Sites/projects/hypermedia/root/wp-config.php",
+		"/Users/thijs/Sites/projects/hypermedia/root/wp-content/themes/hypermedia/partials/loop.php",
+		"/Users/thijs/Sites/projects/hypermedia/root/wp-content/themes/twentyfifteen/page.php",
+		"/Users/thijs/Sites/projects/hypermedia/root/.htaccess",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q3 DBL Hypermedia/Server/scss/partials/_home-topics.scss",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q3 DBL Hypermedia/Server/scss/_layout.scss",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q3 DBL Hypermedia/Server/scss/_base.scss",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q3 DBL Hypermedia/Server/scss/partials/_side-nav.scss",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q3 DBL Hypermedia/Server/root/wp-content/themes/hypermedia/single.php",
+		"/Users/thijs/Dropbox/TU Eindhoven/Q3 DBL Hypermedia/Server/root/wp-content/themes/hypermedia/index.php"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"load",
+			"nextSwitch",
+			"nextSwith",
+			"disableRevertButton",
+			"next",
+			"sortmerge",
+			"monday",
+			"Program.Monday",
+			"switches",
+			"console.log",
+			"console.lo",
+			"ProgramState",
+			"programState",
+			"picker",
+			"uploadData",
+			"Day",
+			"console",
+			"view-3",
+			"view-2",
+			"current",
+			"TargetTemper",
+			"CurrentTemper",
+			"intemperatureboun",
+			"getAll",
+			"script",
+			"initvi",
+			"guides__photo",
+			"a",
+			"$color-cyan",
+			"image",
+			"p",
+			"$post",
+			"css",
+			"top-nav",
+			".main-nav",
+			"get_header",
+			"get_template_part",
+			"font-family",
+			"font",
+			"font-fami",
+			"bolsen",
+			"leader",
+			"namechord",
+			"onRun",
+			"polaris",
+			"intention",
+			"personality",
+			"decision making",
+			"sing ",
+			"se ",
+			"sing",
+			"ze",
+			"attention",
+			"int",
+			"exposure",
+			"accidental",
+			"metacognition",
+			"see",
+			"sees",
+			"situation",
+			"or",
+			"and",
+			"toward",
+			"two",
+			"Gijs",
+			"Concouse",
+			"arousal",
+			"sympath",
+			"O",
+			"gratific",
+			"--",
+			"caret"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Program[day]",
+			"Night",
+			"side-nav",
+			".top-nav"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Readme.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 120,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								120,
+								120
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 152,
+								"count": 16,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"auto_name": "# Web Technology -- First assignment",
+							"syntax": "Packages/MarkdownEditing/MultiMarkdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "web-technology-1.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"conten",
+				"scss/partials/_content.scss"
+			],
+			[
+				"main",
+				"hypermedia/js/main.js"
+			],
+			[
+				"footer",
+				"hypermedia/partials/footer.php"
+			],
+			[
+				"header",
+				"hypermedia/partials/header.php"
+			],
+			[
+				"base",
+				"scss/_base.scss"
+			],
+			[
+				"home-",
+				"scss/partials/_home-topics.scss"
+			],
+			[
+				"gulp",
+				"hypermedia/gulpfile.js"
+			],
+			[
+				"guides",
+				"hypermedia/partials/guides.php"
+			],
+			[
+				"content",
+				"scss/partials/_content.scss"
+			],
+			[
+				"foote",
+				"hypermedia/root/wp-includes/theme-compat/footer.php"
+			],
+			[
+				"main.",
+				"hypermedia/js/main.js"
+			],
+			[
+				"function",
+				"hypermedia/functions.php"
+			],
+			[
+				"heade",
+				"scss/partials/_header.scss"
+			],
+			[
+				"post-temp",
+				"hypermedia/root/wp-includes/post-template.php"
+			],
+			[
+				"hero",
+				"scss/partials/_hero.scss"
+			],
+			[
+				"side-na",
+				"scss/partials/_side-nav.scss"
+			],
+			[
+				"top-n",
+				"scss/partials/_top-nav.scss"
+			],
+			[
+				"head",
+				"hypermedia/partials/header.php"
+			],
+			[
+				"home",
+				"scss/partials/_home-topics.scss"
+			],
+			[
+				"style",
+				"Server/scss/style.scss"
+			],
+			[
+				"grid",
+				"Server/scss/modules/_grid.scss"
+			],
+			[
+				"layou",
+				"scss/_layout.scss"
+			],
+			[
+				"styl",
+				"scss/style.scss"
+			],
+			[
+				"manif",
+				"hypermedia/assets/manifest.json"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 227.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
