@@ -1,0 +1,49 @@
+// Colors ----------------------------------------------------------------------
+// All colors used throughout the site are defined here
+// Color space: sRGB
+/*
+
+The user is free to modify colors with darken() and lighten() to one's own
+desire.
+
+*/
+
+$color-pink:   #FF28E0;
+$color-purple: #6E18E8;
+$color-blue:   #275BFF;
+$color-cyan:   #18CFE8;
+$color-green:  #48FF99;
+
+$color-text: #111;
+$color-text-subtle: #222;
+
+$color-text-light: #eee;
+$color-text-light-subtle: #ccc;
+
+$color-link: darken($color-pink, 12%);
+$color-link-hover: darken($color-pink, 2%);
+
+// $light-text-color: black;
+// $light-text-color-subtle: black;
+// $light-link-color: black;
+// $light-link-color-hover: lighten(black, 20%);
+
+$color-background: #f7f7f7;
+
+$color-primary-header: darken($color-cyan, 5%);
+$color-secondary-header: darken($color-cyan, 25%);
+
+// $dark-background-color: darken($_dark-green, 5%);
+// $header-background-color: lighten($_light-green, 20%);
+
+// Typography ------------------------------------------------------------------
+
+$base-font: 'Meta', 'Fira Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+
+$base-line-height: 24px;
+$base-font-size: 16px;
+$base-border-width: 1px;
+$base-border-style: solid;
+$half-base-line-height: $base-line-height / 2;
+$min-leading: 2px;
+

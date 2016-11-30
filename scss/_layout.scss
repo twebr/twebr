@@ -1,0 +1,136 @@
+// This file contains the grid engine (borrowed from
+// Foundation or similar) and defines how modules relate to
+// each other.
+
+// Layout elements are prefixed with 'l-'
+
+// Article: http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+// Hide off-canvas content (e.g. menu)
+.l-wrapper {
+    // overflow: hidden;
+}
+
+@if $debug  {
+    .wrapper::before {
+        content: attr(class);
+        position: absolute;
+        opacity: .5;
+    }
+}
+
+@mixin layout-debugger($color) {
+    @if $debug {
+        background-color: fade_out($color, .8);
+        &::before {
+            content: attr(class);
+            position: absolute;
+            width: 100%;
+            opacity: .5;
+            font-size: 9px;
+            font-family: "Source Code Pro", Monaco, monospace;
+        }
+    }
+}
+
+// Layout small up -------------------------------------------------------------
+
+    .l-header {
+        @include grid-row();
+
+        // Show background if enabled in settings
+        @include layout-debugger(orange);
+
+    }
+        .l-header__title {
+            @include grid-column(12);
+            @include layout-debugger(yellow);
+        }
+        .l-header__navigation {
+            @include grid-column(12);
+            @include layout-debugger(pink);
+        }
+
+    .l-hero {
+        // @include grid-row();
+    }
+
+    .l-main {
+        @include grid-row();
+        @include layout-debugger(cyan)
+    }
+        .l-main__content {
+            @include grid-column(12);
+            @include layout-debugger(red)
+        }
+        .l-main__navigation {
+            @include grid-column(12);
+        }
+
+    .l-footer {
+        @include grid-row();
+        @include layout-debugger(brown)
+
+        & > * {
+            padding-left: ($half-column-gutter);
+            padding-right: ($half-column-gutter);
+            max-width: $row-width;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        // Show background if enabled in settings
+        @if $debug {
+            background-color: fade_out(green, .8);
+        }
+    }
+
+// Layout medium up ------------------------------------------------------------
+
+@media #{$medium-up} {
+
+    // .l-header
+        .l-header__title {
+            padding-left: $half-column-gutter;
+            width: auto;
+            float: left;
+        }
+        .l-header__navigation {
+            margin-right: $half-column-gutter;
+            float: right;
+            width: auto;
+            display: block;
+        }
+
+    // .l-main
+        .l-main__content {
+            @include grid-column(12);
+        }
+}
+
+// Layout large up -------------------------------------------------------------
+
+@media #{$large-up} {
+
+    // .l-header
+        .l-header__title {
+            // @include grid-column(4);
+        }
+        .l-header__navigation {
+            // @include grid-column(8);
+        }
+
+    // .l-main
+        .l-main__navigation {
+            @include grid-column(3, $pull: 9);
+        }
+        .l-main__content {
+            @include grid-column(9, $push: 3, $collapse: true);
+        }
+}

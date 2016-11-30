@@ -1,0 +1,162 @@
+/*! normalize-opentype.css v0.2.3 | MIT License | kennethormandy.com/journal/normalize-opentype-css */
+
+/* MODIFIED BY THIJS MEEUWISSE */
+
+/**
+ * 1. Inherit style issues with custom selections, per robsterlini.co.uk/journal/opentype-and-selection-dont-mix
+ * 2. Turn on kerning, standard ligatures, and proportional, oldstyle numerals
+ *    Turn off all other ligatures, tabular, lining numerals, and alternates
+ * 3. Hard-codes fallback text selection for issue #18, color is Chrome’s per via http://stackoverflow.com/a/16094931/864799
+ */
+
+// Public mixins ---------------------------------------------------------------
+
+// Tabular lining figures with slashed zero
+@mixin tnum-lnum-zero {
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+}
+
+// Tabular lining figures
+@mixin tnum-lnum {
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1;
+}
+
+// Tabular old-style figures
+@mixin tnum-onum {
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 0, "tnum" 1, "onum" 1, "lnum" 0;
+}
+
+// Proportional lining figures
+@mixin pnum-lnum {
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 1;
+}
+
+// Proportional old-style figures
+@mixin pnum-onum {
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0;
+}
+
+// Discretionary ligatures
+@mixin dlig {
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 1;
+}
+
+// Caps to all small caps
+@mixin c2sc {
+    text-transform: uppercase;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
+}
+
+
+
+//---------------------------------------------------------------------------end
+
+::selection {
+    color: inherit; /* 1. */
+    text-shadow: inherit; /* 2. */
+    background-color: #ACCEF7; /* 3. */
+}
+
+html,
+body {
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0; /* 2. */
+}
+
+/* Headings
+========================================================================== */
+
+/**
+ * 1. Turn on discretionary ligatures for larger headings
+ */
+
+
+h1,
+h2,
+h3 {
+    // @include dlig;
+    // I disabled this because dlig in Meta looks weird.
+}
+
+/* Text-level semantics
+========================================================================== */
+
+/**
+ * 1. Change all letters to uppercase
+ * 2. Turn on small caps for upper and lowercase letters
+ */
+
+abbr {
+    @include c2sc;
+}
+
+/*
+ * TODO: Turn on diagonal fractions where appropriate
+ */
+
+time {
+    @include pnum-onum;
+}
+
+/*
+ * 1. Turn off kerning and ligatures,
+ *    Turn on lining, tabular numerals, slashed zero
+ */
+
+pre,
+kbd,
+samp,
+code {
+    font-feature-settings: "kern" 0, "liga" 0, "calt" 1, "dlig" 0, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1; /* 1. */
+}
+
+/**
+ * 1. Turn on proper supercript numerals
+ */
+
+sup {
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "sups" 1; /* 1. */
+}
+
+/**
+ * 1. Turn on proper subscript numerals
+ */
+
+sub {
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "subs" 1; /* 1. */
+}
+
+/* Forms
+========================================================================== */
+
+/**
+ * 1. Turns on lining, proportional numerals without clarified zeroes
+ * TODO: Additional input modes https://developer.mozilla.org/en/docs/Web/HTML/Element/Input#attr-inputmode
+ */
+
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="number"],
+input[type="range"],
+input[type="tel"],
+input[type="week"] {
+    font-feature-settings: "kern" 0, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 1, "zero" 0; /* 1. */
+}
+
+/* Tables
+========================================================================== */
+
+/**
+ * 1. Resets tables to the same settings as the body.
+ * 2. Turns on tabular, lining numerals and slashed zero
+ */
+
+table {
+    @extend body; /* 1.*/
+}
+
+tbody,
+caption {
+    @include tnum-lnum;
+}
