@@ -1,0 +1,22 @@
+{
+  "name": "web-technology-1",
+  "version": "0.1.0",
+  "description": "This repository hosts the first assignment by Thijs Meeuwisse for Web Technology.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twebr/web-technology-1.git"
+  },
+  "author": "Thijs Meeuwisse",
+  "bugs": {
+    "url": "https://github.com/twebr/web-technology-1/issues"
+  },
+  "homepage": "https://github.com/twebr/web-technology-1#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-watch": "^4.3.5"
+  }
+}

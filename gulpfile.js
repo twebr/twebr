@@ -13,14 +13,14 @@ gulp.task('sass', function () {
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('root/wp-content/themes/hypermedia'))
+    .pipe(gulp.dest('dist/css'))
     .pipe(livereload());
 });
 
 gulp.task('watch', function() {
     livereload.listen();
     gulp.watch('scss/**/*.scss', ['sass']);
-    gulp.watch('root/wp-content/themes/hypermedia/**/*.{php,js,amf,umf}', function() {
-        return gulp.src('root/wp-content/themes/hypermedia/**/*.php').pipe(livereload());
-    });
+    // gulp.watch('root/wp-content/themes/hypermedia/**/*.{php,js,amf,umf}', function() {
+    //     return gulp.src('root/wp-content/themes/hypermedia/**/*.php').pipe(livereload());
+    // });
 });
