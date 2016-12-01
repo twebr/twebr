@@ -4,9 +4,9 @@ body {
     background-color: $color-background;
     color: $color-text;
     font-family: $base-font;
-    -webkit-font-smoothing: subpixel-antialiased;
-    text-rendering: optimizeLegibility;
-    font-variant-ligatures: common-ligatures;
+    // -webkit-font-smoothing: subpixel-antialiased;
+    // text-rendering: optimizeLegibility;
+    // font-variant-ligatures: common-ligatures;
     line-height: 1.5;
 }
 
@@ -17,7 +17,7 @@ p {
 }
 
 h1 {
-    color: $color-primary-header;
+    // color: $color-primary-header;
     clear: both;
     margin: .4em 0;
     line-height: 1.3;
@@ -32,17 +32,6 @@ h2 {
     margin: 1.2em 0 .6em;
 }
 
-h3 {
-    font-size: $base-font-size;
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    margin: 1.5em 0 0 0;
-
-    & + p {
-        margin-top: 0.5em;
-    }
-}
-
 // Links -----------------------------------------------------------------------
 
 a {
@@ -54,20 +43,8 @@ a {
         text-decoration: underline;
     }
     &:active {
-        color: $color-purple;
+        // color: $color-purple;
     }
-    &:visited {
-        color: darken($color-link, 10%);
-    }
-
-    // This does not appear to work (javascript dependent)
-    // &[data-visited] {
-    //     background-color: red;
-    //     color: green;
-    // }
-    // &[data-visited]::after {
-    //     content: " (visited)";
-    // }
 }
 
 // Remove the 300ms delay on mobile
@@ -144,35 +121,28 @@ input:invalid {
 // Selections
 
 ::selection {
-    background-color: fade-out($color-cyan, .4);
+    background-color: fade-out($color-accent, .4);
 }
 
-// dingen hieronder moeten in de toekomst een fatsoenlijke plek krijgen
+// Buttons ---------------------------------------------------------------------
 
-.admin-overview {
-    font-size: .8em;
-}
-
-form li {
-    width: 100%;
-}
-
-input[type=checkbox] {
-    margin-left: 10em;
-}
-
-label {
-    display: inline-block;
-    min-width: 10em;
-    text-align: right;
-    vertical-align: top;
-}
-
-.checkbox-label {
-    text-align: left;
-}
-
-.inputBox {
-    display: inline-block;
-
+button {
+    color: $color-accent;
+    padding: 0;
+    background: transparent;
+    border: none;
+    font-size: 1.4em;
+    &::before {
+        content: "»";
+    }
+    &::after {
+        content: "«";
+    }
+    &:focus {
+        outline: none;
+    }
+    &:active {
+        position: relative;
+        top: 1px;
+    }
 }

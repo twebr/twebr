@@ -1,11 +1,13 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var watch = require('gulp-watch');
-var livereload = require('gulp-livereload')
-var sourcemaps = require('gulp-sourcemaps');
-var autoprefixer = require('gulp-autoprefixer');
+var gulp = require('gulp'),
+    sass = require('gulp-sass'),
+    watch = require('gulp-watch'),
+    livereload = require('gulp-livereload'),
+    sourcemaps = require('gulp-sourcemaps'),
+    autoprefixer = require('gulp-autoprefixer'),
+    rename = require('gulp-rename'),
+    uglify = require('gulp-uglify');
 
-gulp.task('default', ['sass', 'watch']);
+gulp.task('default', ['sass', 'compress', 'watch']);
 
 gulp.task('sass', function () {
     return gulp.src('scss/**/*.scss')
@@ -17,9 +19,21 @@ gulp.task('sass', function () {
     .pipe(livereload());
 });
 
+gulp.task('compress', function() {
+  gulp.src('js/*.js')
+    .pipe(uglify())
+    .pipe(rename({
+        suffix: ".min",
+    }))
+    .pipe(gulp.dest('dist/js'))
+});
+
 gulp.task('watch', function() {
     livereload.listen();
     gulp.watch('scss/**/*.scss', ['sass']);
+    gulp.watch('dist/**/*.html', function (files) {
+        livereload.changed(files);
+    });
     // gulp.watch('root/wp-content/themes/hypermedia/**/*.{php,js,amf,umf}', function() {
     //     return gulp.src('root/wp-content/themes/hypermedia/**/*.php').pipe(livereload());
     // });

@@ -19,8 +19,9 @@ $debug: false;
 @import "base";
 @import "layout";
 
+
 // Partials
-// @import "partials/hero";
+@import "partials/main-nav";
 // @import "partials/top-nav";
 // @import "partials/side-nav";
 // @import "partials/content";
@@ -30,8 +31,3 @@ $debug: false;
 // @import "partials/next-page";
 // @import "partials/guides";
 // @import "partials/tip";
-
-body {
-    // background-color: yellow;
-    font-family: "Real Text", sans-serif;
-}
