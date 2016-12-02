@@ -88,6 +88,10 @@
 		// custom cursor
 		this.cursorChar = this.options.cursorChar;
 
+		// (added by Thijs Meeuwisse)
+		// custom cursor class
+		this.cursorClass = this.options.cursorClass;
+
 		// shuffle the strings
 		this.shuffle = this.options.shuffle;
 		// the order of strings
@@ -120,7 +124,7 @@
 			var self = this;
 			// Insert cursor
 			if (this.showCursor === true) {
-				this.cursor = $("<span class=\"typed-cursor\">" + this.cursorChar + "</span>");
+				this.cursor = $("<span class=\"" + this.cursorClass + "\">" + this.cursorChar + "</span>");
 				this.el.after(this.cursor);
 			}
 			if (this.stringsElement) {
@@ -420,6 +424,8 @@
 		showCursor: true,
 		// character for cursor
 		cursorChar: "|",
+		// (added by Thijs) class for cursor
+		cursorClass: "typed-cursor",
 		// attribute to type (null == text)
 		attr: null,
 		// either html or text

@@ -26,11 +26,13 @@ gulp.task('compress', function() {
         suffix: ".min",
     }))
     .pipe(gulp.dest('dist/js'))
+    .pipe(livereload());
 });
 
 gulp.task('watch', function() {
     livereload.listen();
     gulp.watch('scss/**/*.scss', ['sass']);
+    gulp.watch('js/**/*.js', ['compress']);
     gulp.watch('dist/**/*.html', function (files) {
         livereload.changed(files);
     });
