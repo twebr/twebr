@@ -1,3 +1,12 @@
 .color-accent {
     color: $color-accent;
 }
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+.hide-text {
+  text-indent: -9999px;
+  white-space: nowrap;
+}

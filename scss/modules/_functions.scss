@@ -38,11 +38,6 @@ $rem-base: 16px !default;
   &:after { clear: both; }
 }
 
-@mixin hide-text {
-  text-indent: -9999px;
-  white-space: nowrap;
-}
-
 // Random collection
 @mixin text-stroke($width, $color) {
   text-shadow:

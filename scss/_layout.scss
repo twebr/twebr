@@ -5,6 +5,7 @@
 // Layout elements are prefixed with 'l-'
 $margin-body: 1rem;
 
+$margin-body-large: 3rem;
 
 // Article: http://www.paulirish.com/2012/box-sizing-border-box-ftw/
 html {
@@ -16,13 +17,48 @@ html {
 
 body {
     margin: $margin-body;
+
+    @media (min-width: 40em) {
+        margin: $margin-body-large;
+    }
+
+}
+
+.l-main-nav {
+    margin-bottom: 1em;
+
+
+
+    @media (min-height: 40em) and (min-width: 40em) {
+        margin-bottom: 4em;
+    }
+
+}
+
+.l-hero {
+    max-width: 16em;
+    min-height: 4em;
+
+    @media (min-height: 40em) and (min-width: 40em) {
+        min-height: 6em;
+    }
+
+}
+
+.l-main-text {
+    padding: 0 $margin-body;
+    margin: 0 -1 * $margin-body;
+    @media (min-width: 40em) {
+        padding: 0 $margin-body-large;
+        margin: 0 -1 * $margin-body-large;
+    }
+
+
+    max-width: 28em;
 }
 
 .l-footer {
     margin-top: 2em;
 }
 
-.l-main-text {
-    padding: 0 $margin-body;
-    margin: 0 -1 * $margin-body;
-}
+

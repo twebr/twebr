@@ -13,6 +13,17 @@ body {
     // text-rendering: optimizeLegibility;
     // font-variant-ligatures: common-ligatures;
     line-height: 1.5;
+
+    @media (min-width: 30em) {
+        font-size: 18px;
+    }
+    @media (min-width: 40em) {
+        font-size: 20px;
+    }
+    @media (min-width: 80em) {
+        font-size: 22px;
+    }
+
 }
 
 // Paragraphs and headings -----------------------------------------------------
@@ -141,6 +152,7 @@ input:invalid {
 ::selection {
     background-color: $color-accent;
     color: white;
+    text-shadow: none;
 }
 
 // Buttons ---------------------------------------------------------------------
