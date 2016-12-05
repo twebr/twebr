@@ -21,10 +21,12 @@ gulp.task('sass', function () {
 
 gulp.task('compress', function() {
   gulp.src('js/*.js')
+    .pipe(sourcemaps.init())
     .pipe(uglify())
     .pipe(rename({
         suffix: ".min",
     }))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('dist/js'))
     .pipe(livereload());
 });
