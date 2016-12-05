@@ -5,8 +5,20 @@
 
 }
 
+.js-retype {
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+    transition-delay: 1s;
+    transition-timing-function: ease-out;
+    transform: translateY(.5em);
+}
 
-.js-typed-cursor__stationary{
+.js-retype--visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.js-typed-cursor--stationary{
     opacity: 1;
     animation: blink 1.2s steps(1,end) infinite;
 }

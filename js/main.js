@@ -2,7 +2,7 @@ $(document).ready(function() {
     var $hero = $('#js-hero');
     var $stringElement = $('#js-typed-strings');
     var $cursor = $("<span class=\"js-typed-cursor\">|</span>");
-    var cursorStationaryClass = 'js-typed-cursor__stationary';
+    var cursorStationaryClass = 'js-typed-cursor--stationary';
 
     // Print the cursor to the DOM
     $hero.after($cursor);
@@ -35,7 +35,7 @@ $(document).ready(function() {
 
     console.log(strings);
 
-    var typewriteString = function(curString, curStrPos, backspace) {
+    var typewriteString = function(curString, curStrPos, callback) {
         // Remove stationary class from cursor
         if(curStrPos === 0) {
             $cursor.removeClass(cursorStationaryClass);
@@ -68,6 +68,11 @@ $(document).ready(function() {
             if (curStrPos === curString.length) {
                 // When we are finished typing, add/remove class to cursor
                 $cursor.addClass(cursorStationaryClass);
+
+                // And execute the callback
+                if(typeof callback == 'function') {
+                    callback();
+                }
             } else {
                 // add characters one by one
                 curStrPos++;
@@ -75,7 +80,7 @@ $(document).ready(function() {
                 $hero.html(curString.substr(0,curStrPos));
 
                 // loop the function
-                typewriteString(curString, curStrPos, backspace);
+                typewriteString(curString, curStrPos, callback);
             }
             // end of character pause
         }, randomDelay);
@@ -138,7 +143,9 @@ $(document).ready(function() {
     }
 
     // Print the first string
-    typewriteString(strings[0], 0);
+    typewriteString(strings[0], 0, function() {
+        $(".js-retype").addClass("js-retype--visible");
+    });
 
     $(".js-retype").on("click", function() {
         printNextString();
