@@ -61,7 +61,7 @@ $(document).ready(function() {
             tag += endTag;
         }
 
-        var randomDelay = Math.round(10 + Math.random() * 70)
+        var randomDelay = Math.round(15 + Math.random() * 75)
 
         // timeout for any pause after a character
         setTimeout(function() {
@@ -99,7 +99,7 @@ $(document).ready(function() {
             tag += '<';
         }
 
-        var randomDelay = Math.round(10 + Math.random() * 70)
+        var randomDelay = Math.round(15 + Math.random() * 25)
 
         // timeout for any pause after a character
         setTimeout(function() {

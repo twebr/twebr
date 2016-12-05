@@ -20,10 +20,10 @@
     color: black;
 }
 
-.main-nav__link--home {
+.main-nav__link--current {
     color: $color-link;
 }
 
-.main-nav__link--active {
-    color: darken($color-link, 10%);
-}
+// .main-nav__link--active {
+//     color: darken($color-link, 50%);
+// }

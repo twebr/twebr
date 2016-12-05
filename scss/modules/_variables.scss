@@ -9,7 +9,7 @@ desire.
 */
 
 $color-text: #020202;
-$color-text-subtle: #222;
+$color-text-subtle: #333;
 
 $color-accent: #ff5100;
 
@@ -18,20 +18,10 @@ $color-link-hover: darken($color-link, 2%);
 
 $color-background: #fff;
 
-$color-primary-header: $color-accent;
-$color-secondary-header: $color-primary-header;
-
 // $dark-background-color: darken($_dark-green, 5%);
 // $header-background-color: lighten($_light-green, 20%);
 
 // Typography ------------------------------------------------------------------
 
 $base-font: 'Real', 'Meta', 'Fira Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
-
-$base-line-height: 24px;
-$base-font-size: 16px;
-$base-border-width: 1px;
-$base-border-style: solid;
-$half-base-line-height: $base-line-height / 2;
-$min-leading: 2px;
 
