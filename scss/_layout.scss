@@ -3,6 +3,8 @@
 // each other.
 
 // Layout elements are prefixed with 'l-'
+$margin-body: 1rem;
+
 
 // Article: http://www.paulirish.com/2012/box-sizing-border-box-ftw/
 html {
@@ -13,9 +15,14 @@ html {
 }
 
 body {
-    margin: 1rem;
+    margin: $margin-body;
 }
 
 .l-footer {
     margin-top: 2em;
+}
+
+.l-main-text {
+    padding: 0 $margin-body;
+    margin: 0 -1 * $margin-body;
 }

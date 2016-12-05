@@ -3,7 +3,7 @@
 body {
     background-color: $color-background;
     background-image: url('../img/bg.svg');
-    background-position: right top;
+    background-position: right 3rem;
     background-repeat: no-repeat;
 
     color: $color-text;
@@ -23,7 +23,7 @@ p {
 
 h1 {
     // color: $color-primary-header;
-    clear: both;
+    // clear: both;
     margin: .4em 0;
     line-height: 1.3;
     font-weight: normal;
@@ -147,6 +147,7 @@ input:invalid {
 
 button {
     color: $color-accent;
+    @include text-stroke(2px, $color-background);
     padding: 0;
     background: transparent;
     border: none;

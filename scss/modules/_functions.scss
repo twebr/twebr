@@ -43,6 +43,15 @@ $rem-base: 16px !default;
   white-space: nowrap;
 }
 
+// Random collection
+@mixin text-stroke($width, $color) {
+  text-shadow:
+     -1 * $width -1 * $width 0 $color,
+          $width -1 * $width 0 $color,
+     -1 * $width      $width 0 $color,
+          $width      $width 0 $color,
+}
+
 // RANGES
 // We use these functions to define ranges for various things, like media queries.
 @function lower-bound($range){
