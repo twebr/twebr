@@ -1,30 +1,3 @@
-// $(function() {
-//     var $hero = $('#js-hero');
-
-//   $hero.typed({
-//     // stringsElement: $('#js-typed-strings'),
-//     typeSpeed: 0,
-//     backDelay: 500,
-//     onStringTyped: function() {
-//         // console.log(this);
-//         // $hero.typed('pause');
-//         $(".typed-cursor").addClass("typed-cursor__stationary");
-//     },
-//     preStringTyped: function() {
-//         // $hero.typed('pause');
-//     }
-//   });
-
-//     // $('.stop').on('click', function() {
-//     //   $hero.data('typed').pauseTyping();
-//     // });
-
-//   $('.js-retype').on('click', function() {
-//         $hero.typed('toggleTyped');
-//       // $hero.data('typed').continueTyping();
-//     });
-// });
-
 $(document).ready(function() {
     var $hero = $('#js-hero');
     var $stringElement = $('#js-typed-strings');
