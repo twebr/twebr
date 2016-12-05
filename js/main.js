@@ -34,6 +34,9 @@ $(document).ready(function() {
     // Print the cursor to the DOM
     $hero.after($cursor);
 
+    // Hide stringElement
+    $stringElement.hide();
+
     var getStrings = function() {
         // Build a strings variable containing all strings to be shown
         var $strings = $stringElement.children();
@@ -105,14 +108,11 @@ $(document).ready(function() {
         }, randomDelay);
     }
 
-    var backspaceString = function(curString, curStrPos) {
+    var backspaceString = function(curString, curStrPos, callback) {
         // Remove stationary class from cursor
         if(curStrPos === curString.length) {
             $cursor.removeClass(cursorStationaryClass);
         }
-
-        // skip over html tags while typing
-        var curChar = curString.substr(curStrPos).charAt(0)
 
         // skip over html tags while backspacing
         if (curString.substr(curStrPos).charAt(0) === '>') {
@@ -133,68 +133,45 @@ $(document).ready(function() {
             if (curStrPos === 0) {
                 // When we are finished backspacing, add/remove class to cursor
                 $cursor.addClass(cursorStationaryClass);
+
+                // And execute the callback
+                if(typeof callback == 'function') {
+                    callback();
+                }
             } else {
                 // remove characters one by one
                 curStrPos--;
                 $hero.html(curString.substr(0,curStrPos));
 
                 // loop the function
-                backspaceString(curString, curStrPos);
+                backspaceString(curString, curStrPos, callback);
             }
             // end of character pause
         }, randomDelay);
     }
 
+    var counter = 0;
+    var printNextString = function() {
+        var oldCounter = counter;
+        counter = (counter + 1) % strings.length;
+
+        // Remove the string currently visible
+        backspaceString(strings[oldCounter], strings[oldCounter].length, function() {
+            typewriteString(strings[counter], 0);
+        });
+
+        // Print the next string
+        // typewriteString(strings[counter], 0);
+    }
 
     // Print the first string
     typewriteString(strings[0], 0);
 
-    setTimeout(function(){
-        console.log('delayed shizzle');
-        backspaceString(strings[0], strings[0].length)
-    }, 5000);
-
+    $(".js-retype").on("click", function() {
+        printNextString();
+    });
 
 });
-
-
-
-
-// $(function(){
-
-//     options = {
-//         // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
-//         stringsElement: $('#js-typed-strings'),
-//         typeSpeed: 10,
-//         backDelay: 500,
-//         // loop: false,
-//         // contentType: 'html', // or text
-//         // defaults to false for infinite loop
-//         // loopCount: false,
-//         callback: function(){
-//             // In a perfect world, '.typed-cursor' would refer to the option set in the $typed function (but I don't know how to do that and this works as well)
-//             $(".typed-cursor").addClass("typed-cursor__stationary");
-//         },
-
-//         onStringTyped: function() {
-//             console.log(this);
-//             // this.backDelay = 10000;
-//         }
-
-//         // resetCallback: function() { newTyped(); }
-//     };
-
-//     $("#js-typed").typed(options);
-
-//     $(".js-reset").click(function(){
-
-//         console.log(options.stringsElement);
-
-//         $("#js-typed").typed(options);
-//     });
-
-// });
-
 
 /**
  * Shuffles array in place.
