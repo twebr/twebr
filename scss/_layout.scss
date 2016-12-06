@@ -56,6 +56,11 @@ body {
 
     max-width: 28em;
 }
+    .l-main-text--wide {
+        @include clearfix;
+        max-width: none;
+    }
+
 
 .l-footer {
     margin-top: 2em;
