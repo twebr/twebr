@@ -5,9 +5,10 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     autoprefixer = require('gulp-autoprefixer'),
     rename = require('gulp-rename'),
-    uglify = require('gulp-uglify');
+    uglify = require('gulp-uglify'),
+    htmlmin = require('gulp-htmlmin');
 
-gulp.task('default', ['sass', 'compress', 'watch']);
+gulp.task('default', ['sass', 'js', 'html', 'watch']);
 
 gulp.task('sass', function () {
     return gulp.src('scss/**/*.scss')
@@ -19,22 +20,34 @@ gulp.task('sass', function () {
     .pipe(livereload());
 });
 
-gulp.task('compress', function() {
+gulp.task('js', function() {
   gulp.src('js/*.js')
     .pipe(sourcemaps.init())
     .pipe(uglify())
     .pipe(rename({
         suffix: ".min",
     }))
-    .pipe(sourcemaps.write())
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dist/js'))
     .pipe(livereload());
 });
 
+gulp.task('html', function() {
+  gulp.src('html/**/*.{html,htm}')
+    .pipe(htmlmin({
+        collapseWhitespace: true,
+        removeComments: true,
+    }))
+    .pipe(gulp.dest('dist'))
+    .pipe(livereload());
+});
+
+
 gulp.task('watch', function() {
     livereload.listen();
     gulp.watch('scss/**/*.scss', ['sass']);
-    gulp.watch('js/**/*.js', ['compress']);
+    gulp.watch('js/**/*.js', ['js']);
+    gulp.watch('html/**/*.{htm,html}', ['html']);
     gulp.watch('dist/**/*.html', function (files) {
         livereload.changed(files);
     });
