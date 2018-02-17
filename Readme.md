@@ -9,3 +9,5 @@ Run the following command:
     $ git subtree push --prefix dist origin gh-pages
 
 That's it. A more detailed explanation can be found in [this gist](https://gist.github.com/cobyism/4730490).
+
+The website can be found at: [http://thijsmeeuwisse.com](http://thijsmeeuwisse.com)
