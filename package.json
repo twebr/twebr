@@ -1,25 +1,28 @@
 {
-  "name": "web-technology-1",
+  "name": "twebr",
   "version": "0.1.0",
-  "description": "This repository hosts the first assignment by Thijs Meeuwisse for Web Technology.",
+  "description": "This repository hosts my personal website.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/twebr/web-technology-1.git"
+    "url": "git+https://github.com/twebr/twebr.git"
   },
   "author": "Thijs Meeuwisse",
   "bugs": {
-    "url": "https://github.com/twebr/web-technology-1/issues"
+    "url": "https://github.com/twebr/twebr/issues"
   },
-  "homepage": "https://github.com/twebr/web-technology-1#readme",
+  "homepage": "https://github.com/twebr/twebr#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-htmlmin": "^3.0.0",
     "gulp-livereload": "^3.8.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.2.0",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-uglify": "^2.0.0",
+    "gulp-rename": "^1.2.3",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^1.12.1",
+    "gulp-uglify": "^2.1.2",
     "gulp-watch": "^4.3.5"
+  },
+  "dependencies": {
+    "npm": "^6.1.0"
   }
 }
