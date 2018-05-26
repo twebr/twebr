@@ -9,3 +9,5 @@ Run the following command:
     $ git subtree push --prefix dist origin gh-pages
 
 That's it. A more detailed explanation can be found in [this gist](https://gist.github.com/cobyism/4730490).
+
+Be aware the `~/dist` folder should contain the appropriate CNAME file! This is not automatically handled by Gulp (yet), so always check this manually before updateing `gh-pages`.
