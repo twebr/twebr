@@ -1,5 +1,7 @@
 # Thijs Meeuwisse's personal website
 
+*Note that you are currently checking out the `placeholder2020` branch. This branch is meant as a temporary replacement for my (outdated) website.*
+
 This repository hosts [my personal website](https://thijsmeeuwisse.com).
 
 ## Publishing the `~/dist` folder to GitHub pages
