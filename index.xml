@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Thijs Meeuwisse</title>
+    <link>https://thijsmeeuwisse.com/</link>
+    <description>Recent content in Home on Thijs Meeuwisse</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>nl_NL</language>
+    <lastBuildDate>Sun, 12 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://thijsmeeuwisse.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Studie en reflectie in tijden van crisis</title>
+      <link>https://thijsmeeuwisse.com/posts/studie-reflectie-corona/</link>
+      <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://thijsmeeuwisse.com/posts/studie-reflectie-corona/</guid>
+      <description>Studie en reflectie in tijden van crisis Vorige week las ik het artikel van Marc van Oostendorp over universitair onderwijs in tijden van corona. Hij pleit ervoor dit semester op te geven en alle studenten een halfjaar extra te geven. Het artikel heeft me aan het denken gezet. Wat vind ik zelf van dit voorstel?
+Vooropgesteld: het oplopen van studievertraging is voor mij geen groot probleem. Ik erken dat studenten niet zitten te wachten op een halfjaar extra collegegeld, huur, etcetera, maar op een mensenleven kan ik me niet voorstellen dat deze maanden nou hét verschil gaan maken1.</description>
+    </item>
+    
+  </channel>
+</rss>
