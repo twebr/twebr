@@ -3,7 +3,8 @@ html {
 }
 
 body {
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; */
+    font-family: 'Alegreya', serif;
     margin: 2rem;
     line-height: 1.6;
 }
@@ -31,16 +32,26 @@ body {
 
 /* Default text styling */
 
+h1, h2, h3 {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
 h1 {
-    line-height: .9;
-    font-weight: 800;
+    font-size: 2rem;
+    font-weight: 900;
     color: #ff5100;
     margin:  .67em 0;
+    line-height: 1.3;
 }
-    .display {
-        font-size: 12vw;
-        /* font-size: calc(1.5rem + 5vw); */
-    }
+
+h2 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+h3 {
+    font-size: 1rem;
+}
 
 a {
     color: #D44E0F;
@@ -48,6 +59,14 @@ a {
 }
     a:hover {
         text-decoration: underline;
+    }
+    a[href^="http://"]::after, a[href^="https://"]::after {
+        content: '↗︎';
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+        display: inline-block; /* Diables text underline */
+        color: #bbb;
+        vertical-align: super;
+        font-size: .75em;
     }
 
 p {
@@ -97,4 +116,18 @@ hr {
 
 .text-right {
     text-align: right;
+}
+
+.text-display {
+    font-size: 12vw;
+    line-height: .9;
+    /* font-size: calc(1.5rem + 5vw); */
+}
+
+.font-sans {
+    font-family: 'Alegreya Sans', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+
+.font-serif {
+    font-family: 'Alegreya', serif;
 }
