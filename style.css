@@ -96,6 +96,11 @@ hr {
     font-size: .75rem;
 }
 
+.wrapper img {
+    width: 100%;
+    max-width: 30em;
+}
+
 /* Utility classes */
 /* Naming conventions from tailwindcss */
 
@@ -131,4 +136,8 @@ hr {
 
 .font-serif {
     font-family: 'Alegreya', serif;
+}
+
+.max-w-full {
+    max-width: 100%;
 }
