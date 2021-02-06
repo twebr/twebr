@@ -1,36 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Links on Thijs Meeuwisse</title>
-    <link>https://thijsmeeuwisse.com/links/</link>
-    <description>Recent content in Links on Thijs Meeuwisse</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>nl_NL</language>
-    <lastBuildDate>Mon, 18 May 2020 21:07:31 +0200</lastBuildDate>
-    
-	<atom:link href="https://thijsmeeuwisse.com/links/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Alie Lassche over de huidhongerige single</title>
-      <link>https://thijsmeeuwisse.com/links/2020/05/alie-lassche-over-de-huidhongerige-single/</link>
-      <pubDate>Mon, 18 May 2020 21:07:31 +0200</pubDate>
-      
-      <guid>https://thijsmeeuwisse.com/links/2020/05/alie-lassche-over-de-huidhongerige-single/</guid>
-      <description>Alie Lassche schrijft over aanraking en eenzaamheid. Als single soortgenoot resoneert het stuk sterk bij mij.
-Het einde is nog niet in zicht. En ja, anderen groepen hebben het echt wel slechter dan wij. Maar dat maakt het verlangen naar die omhelzing niet minder.</description>
-    </item>
-    
-    <item>
-      <title>Anderhalvemetersamenleving Ten Bos</title>
-      <link>https://thijsmeeuwisse.com/links/2020/04/anderhalvemetersamenleving-ten-bos/</link>
-      <pubDate>Mon, 13 Apr 2020 16:16:27 +0200</pubDate>
-      
-      <guid>https://thijsmeeuwisse.com/links/2020/04/anderhalvemetersamenleving-ten-bos/</guid>
-      <description>René ten Bos:
- De mens is een thigmofiel wezen: de mens wil aangeraakt worden. Je vraagt eigenlijk iets wat tegen hun natuur ingaat. (&amp;hellip;) Ik word er niet zo vrolijk van omdat ik denk dat we in een soort nachtmerrie terechtkomen van iedereen die helemaal kickt op digitalisering. En dat is heel lastig.
- Mooi interview met onder andere Jarno Duursma en René ten Bos over de anderhalvemeter­samenleving, en de (technologische) implicaties ervan.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Links on Thijs Meeuwisse</title><link>https://thijsmeeuwisse.com/links/</link><description>Recent content in Links on Thijs Meeuwisse</description><generator>Hugo -- gohugo.io</generator><language>nl_NL</language><lastBuildDate>Mon, 18 May 2020 21:07:31 +0200</lastBuildDate><atom:link href="https://thijsmeeuwisse.com/links/index.xml" rel="self" type="application/rss+xml"/><item><title>Alie Lassche over de huidhongerige single</title><link>https://thijsmeeuwisse.com/links/2020/05/alie-lassche-over-de-huidhongerige-single/</link><pubDate>Mon, 18 May 2020 21:07:31 +0200</pubDate><guid>https://thijsmeeuwisse.com/links/2020/05/alie-lassche-over-de-huidhongerige-single/</guid><description>Alie Lassche schrijft over aanraking en eenzaamheid. Als single soortgenoot resoneert het stuk sterk bij mij.
+Het einde is nog niet in zicht. En ja, anderen groepen hebben het echt wel slechter dan wij. Maar dat maakt het verlangen naar die omhelzing niet minder.</description></item><item><title>Anderhalvemetersamenleving Ten Bos</title><link>https://thijsmeeuwisse.com/links/2020/04/anderhalvemetersamenleving-ten-bos/</link><pubDate>Mon, 13 Apr 2020 16:16:27 +0200</pubDate><guid>https://thijsmeeuwisse.com/links/2020/04/anderhalvemetersamenleving-ten-bos/</guid><description>René ten Bos:
+De mens is een thigmofiel wezen: de mens wil aangeraakt worden. Je vraagt eigenlijk iets wat tegen hun natuur ingaat. (&amp;hellip;) Ik word er niet zo vrolijk van omdat ik denk dat we in een soort nachtmerrie terechtkomen van iedereen die helemaal kickt op digitalisering. En dat is heel lastig.
+Mooi interview met onder andere Jarno Duursma en René ten Bos over de anderhalvemeter­samenleving, en de (technologische) implicaties ervan.</description></item></channel></rss>
